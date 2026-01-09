@@ -1,0 +1,25 @@
+h1{ /*selettore di tag*/
+    color: red;
+}
+p{
+    color: blue;
+    font-size: 18px;
+}
+.speciale{ /*selettore di classe*/
+    color: red;
+    font-weight: bold;
+}
+#importante{    /*selettore di id*/
+color: purple;
+background-color: yellow;
+padding: 10px;
+}
+section > p{ /*applica a tutti i figli diretti di section con tag p, quindi in questo caso non prenderà il p dentra al div dentro al section*/
+    background-color: lightblue;
+    padding: 10px;
+}
+
+h3+p{ /*prende il primo fratello adiacente(che segue), quindi lo stile viene assegnato solo al paragrafo, non a h3*/
+    font-weight: bold;
+    color: green;
+}
